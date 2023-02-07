@@ -48,10 +48,10 @@ def distancia_aeroportos(iata1, iata2):
         coordenadas2 = getCordenadas(iata2)
 
         distancia = distance_haversine(coordenadas1, coordenadas2)
-        return distancia
+        return round(distancia, 2)
     except:
         return None
 
 
-print(distancia_aeroportos('bsb', 'gyn'), "Km")
+print(distancia_aeroportos('bsb', 'asa'), "Km")
 
